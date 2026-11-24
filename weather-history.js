@@ -24,7 +24,6 @@ class WeatherHistory extends HTMLElement {
     }
   }
 
-  // Berechnet Start- und Enddatum (YYYY-MM-DD) für die letzten X Tage
   getDateRange(daysBack = 7) {
     const end = new Date();
     end.setDate(end.getDate() - 1);
